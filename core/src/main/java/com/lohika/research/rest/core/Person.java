@@ -11,6 +11,9 @@ public class Person {
     private String lastName;
     private Long birthDate;
 
+    public Person() {
+    }
+
     public Person(Long id, String firstName, String lastName, Long birthDate) {
         this.id = id;
         this.firstName = firstName;
