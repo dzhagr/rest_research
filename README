@@ -1,1 +1,15 @@
-This file was created by IntelliJ IDEA 12.0.4 for binding GitHub repository
+This is just a sample project created to compare REST Java implementations.
+
+Request bodies for all requests and responses are in JSON format. The following RESTful API is expected to be supported:
+
+1. GET /WEB_ROOT/person
+Returns a list of all people, e.g. [{"id":1,"firstName":"Paul","lastName":"Smith","birthDate":1363889344450},{"id":2,"firstName":"Max","lastName":"Planck","birthDate":1363889344450}]
+2. GET /WEB_ROOT/person/{person_id}
+Returns a person with id specified, e.g {"id":2,"firstName":"Paul","lastName":"Smith","birthDate":1363889287165}
+3. POST /WEB_ROOT/person Content-Type: application/json
+Creates a person specified in the request body. Body example: {"id":1,"firstName":"Paul","lastName":"Smith","birthDate":1363874736646}
+Response is a link to the created person, e.g. http://localhost:8080/spring_rest/person/25
+4. PUT /WEB_ROOT/person Content-Type: application/json
+Replaces all people with those that are specified in the request body. Body example: [{"id":1,"firstName":"Paul","lastName":"Smith","birthDate":1363874736646},{"id":1,"firstName":"Paul","lastName":"Smith","birthDate":1363874736646}]
+Response is just the text message, saying how much people are replaced, e.g. 2 people replaced
+
