@@ -1,0 +1,76 @@
+<html>
+<body>
+
+<h2>Rest Research</h2>
+This is just a sample project created to compare REST Java frameworks.
+
+<h3>Getting Started</h3>
+
+
+<p>
+    mkdir rest_research
+    <br>
+    cd rest_research
+    <br>
+    git init
+    <br>
+    git pull https://github.com/dzhagr/rest_research.git
+    <br>
+    mvn clean install
+    <br>
+    cd spring_rest
+    <br>
+    mvn jetty:run
+</p>
+
+<h3>RESTful API</h3>
+
+<p>Bodies for all requests and responses are in JSON format. The following RESTful API is expected to be supported:</p>
+
+<p>
+    1. GET /WEB_ROOT/person
+    <br>
+    Returns a list of all people, e.g.
+    <br>
+    [{"id":1,"firstName":"Paul","lastName":"Smith","birthDate":1363889344450},{"id":2,"firstName":"Max","lastName":"Planck","birthDate":1363889344450}]
+</p>
+
+<p>
+    2. GET /WEB_ROOT/person/{person_id}
+    <br>
+    Returns a person with id specified, e.g
+    <br>
+    {"id":2,"firstName":"Paul","lastName":"Smith","birthDate":1363889287165}
+</p>
+
+<p>
+    3. POST /WEB_ROOT/person Content-Type: application/json
+    <br>
+    Creates a person specified in the request body. Body example:
+    <br>
+    {"id":1,"firstName":"Paul","lastName":"Smith","birthDate":1363874736646}
+    <br>
+    Response is a link to the created person, e.g.
+    <br>
+    Status Code: 201 Created
+    <br>
+    Content-Length: 0
+    <br>
+    Location: http://localhost:8080/spring_rest/person/25
+    <br>
+    Server: Jetty(6.1.26)
+    <br>
+
+</p>
+
+
+<p>4. PUT /WEB_ROOT/person Content-Type: application/json
+    <br>
+    Replaces all people with those that are specified in the request body. Body example:
+    <br>
+    [{"id":1,"firstName":"Paul","lastName":"Smith","birthDate":1363874736646},{"id":1,"firstName":"Paul","lastName":"Smith","birthDate":1363874736646}]
+    <br>
+    Response is just the text message, saying how much people are replaced, e.g. 2 people replaced
+</p>
+</body>
+</html>
