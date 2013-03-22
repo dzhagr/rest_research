@@ -1,4 +1,4 @@
-package com.lohika.research.rest.controller;
+package com.dzhagr.research.rest.controller;
 
 /**
  * Author: adzhagriev

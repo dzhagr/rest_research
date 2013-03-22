@@ -1,7 +1,7 @@
-package com.lohika.research.rest.controller;
+package com.dzhagr.research.rest.controller;
 
-import com.lohika.research.rest.core.DataProvider;
-import com.lohika.research.rest.core.Person;
+import com.dzhagr.research.rest.core.DataProvider;
+import com.dzhagr.research.rest.core.Person;
 import java.util.Collection;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

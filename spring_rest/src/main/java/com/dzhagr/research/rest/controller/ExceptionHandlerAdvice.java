@@ -1,4 +1,4 @@
-package com.lohika.research.rest.controller;
+package com.dzhagr.research.rest.controller;
 
 import javax.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;

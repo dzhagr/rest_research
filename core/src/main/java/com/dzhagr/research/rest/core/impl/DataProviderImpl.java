@@ -1,7 +1,7 @@
-package com.lohika.research.rest.core.impl;
+package com.dzhagr.research.rest.core.impl;
 
-import com.lohika.research.rest.core.DataProvider;
-import com.lohika.research.rest.core.Person;
+import com.dzhagr.research.rest.core.DataProvider;
+import com.dzhagr.research.rest.core.Person;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;

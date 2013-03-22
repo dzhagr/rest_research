@@ -1,4 +1,4 @@
-package com.lohika.research.rest.core;
+package com.dzhagr.research.rest.core;
 
 import java.util.Collection;
 

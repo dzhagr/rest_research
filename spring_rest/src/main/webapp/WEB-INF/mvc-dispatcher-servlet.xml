@@ -9,13 +9,13 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
-    <context:component-scan base-package="com.lohika.research.rest.controller"/>
+    <context:component-scan base-package="com.dzhagr.research.rest.controller"/>
 
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations" value="classpath:msg.properties"/>
     </bean>
 
-    <bean id="dataProviderImpl" class="com.lohika.research.rest.core.impl.DataProviderImpl"/>
+    <bean id="dataProviderImpl" class="com.dzhagr.research.rest.core.impl.DataProviderImpl"/>
 
     <mvc:annotation-driven/>
 
